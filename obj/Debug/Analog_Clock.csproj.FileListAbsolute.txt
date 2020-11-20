@@ -1,0 +1,10 @@
+C:\Users\halbo\source\repos\Analog_Clock\bin\Debug\Analog_Clock.exe.config
+C:\Users\halbo\source\repos\Analog_Clock\bin\Debug\Analog_Clock.exe
+C:\Users\halbo\source\repos\Analog_Clock\bin\Debug\Analog_Clock.pdb
+C:\Users\halbo\source\repos\Analog_Clock\obj\Debug\Analog_Clock.csprojAssemblyReference.cache
+C:\Users\halbo\source\repos\Analog_Clock\obj\Debug\Analog_Clock.Form1.resources
+C:\Users\halbo\source\repos\Analog_Clock\obj\Debug\Analog_Clock.Properties.Resources.resources
+C:\Users\halbo\source\repos\Analog_Clock\obj\Debug\Analog_Clock.csproj.GenerateResource.cache
+C:\Users\halbo\source\repos\Analog_Clock\obj\Debug\Analog_Clock.csproj.CoreCompileInputs.cache
+C:\Users\halbo\source\repos\Analog_Clock\obj\Debug\Analog_Clock.exe
+C:\Users\halbo\source\repos\Analog_Clock\obj\Debug\Analog_Clock.pdb
