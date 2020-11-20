@@ -9,7 +9,7 @@
 [Otologic BGM・ジングル・効果音のフリー素材](https://otologic.jp/)
 
 # 5. License
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENSE)
+MIT
 
 # 6. Author
 ## [T. Fujita](https://github.com/To-Fujita)
