@@ -3,7 +3,7 @@
 # 2. Description:
 This is a program for Analog Clock based on the Visual Studio 2019 c#. The Clock face and clock hands are created by picture images, then all of clock hands show the time by rotating their images.
 # 3. Demo:
-After download and unzip the zip file from the "Code", please double click "Analog_Clock.sln" file. Then, you can create the exe file for the Analog Clock as below.
+After download and unzip the zip file from the "Code", please double click "Analog_Clock.sln" file. Then, you can create the exe file for the Analog Clock as below.  
 ![Image for Analog Clock](https://to-fujita.github.io/Images/128.png "Image for Analog Clock")
 
 # 4. Reference:
