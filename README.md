@@ -1,4 +1,4 @@
-# 1. Title: Analog-Clock-on-Visual-Studio-2019
+# 1. Title: Analog Clock on Visual Studio 2019
 
 # 2. Description:
 This is a program for Analog Clock based on the Visual Studio 2019 c#. The Clock face and clock hands are created by picture images, then all of clock hands show the time by rotating their images.
