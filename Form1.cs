@@ -1,4 +1,4 @@
-﻿// Analog Clock by T. Fujita on 2020/11/20
+﻿// Analog Clock by T. Fujita on 2020/11/23
 
 using System;
 using System.Collections.Generic;
@@ -45,6 +45,7 @@ namespace Analog_Clock
         public static string[] ClockFaceData = new string[8];               // 時計の文字盤名称
         public static string[] ClockHandsData = new string[6];              // 時計の針の名称
         public delegate void Delegate();            // Invoke()を使用するため、関数を変数のように扱う為のもの
+        public static int Time_Count = 0;
 
         public Form1()
         {
@@ -152,7 +153,7 @@ namespace Analog_Clock
             pictureBox3.BackColor = Color.Transparent;
             pictureBox4.BackColor = Color.Transparent;
 
-            System.Timers.Timer timer = new System.Timers.Timer(1000);
+            System.Timers.Timer timer = new System.Timers.Timer(200);
             timer.Elapsed += (sender_Temp, e_Temp) =>
             {
                 Draw_Clock();
@@ -264,15 +265,23 @@ namespace Analog_Clock
             float MinuteAng = (float)((time.Minute + time.Second / 60.0) * 6.0);
             float HourAng = (float)((time.Hour + time.Minute / 60.0) * 30.0);
 
-            try
+            if (Time_Count == 0)
             {
                 pictureBox4.Image = RotateBitmap(Clock_Second, SecondAng, Clock_Second.Width / 2, Clock_Second.Height / 2);
+            }
+            if (Time_Count == 1)
+            {
                 pictureBox3.Image = RotateBitmap(Clock_Minute, MinuteAng, Clock_Minute.Width / 2, Clock_Minute.Height / 2);
+            }
+            if (Time_Count == 2)
+            {
                 pictureBox2.Image = RotateBitmap(Clock_Hour, HourAng, Clock_Hour.Width / 2, Clock_Hour.Height / 2);
             }
-            catch (Exception e)
+
+            Time_Count = Time_Count + 1;
+            if (Time_Count > 4)
             {
-                Console.WriteLine("Error: " + e);
+                Time_Count = 0;
             }
 
             if (T_Signal_flag == 1)
@@ -350,6 +359,7 @@ namespace Analog_Clock
             dialog1.Show();
         }
 
+        // Context MenuでAlarm_OFFを選択した場合の処理
         private void alarmOFFToolStripMenuItem_Click(object sender, EventArgs e)
         {
             player_T_Signal.Stop();
